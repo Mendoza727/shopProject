@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <header id="header" class="header border-b bg-gradient-to-r from-cyan-500 to-blue-500">
     <div class="container">
         <div class="row">
-            <div class="four columns">
-                <p class="font-bold mx-2 text-white" id="logo">FoodStore</p>
+            <div class="four columns font-bold">
+                <p class="font-bold mx-2 text-white" id="logo">FastFood</p>
                 <img src="/assets/img/food.png" width="80" id="logo">
             </div>
             <div class="two columns u-pull-right">
@@ -25,7 +24,7 @@
                     <li class="submenu">
                             <div class="four columns">
                                 <p class="font-bold mx-2 text-white" id="logo">Carrito</p>
-                                <img src="/assets/img/cart.png" width="60" id="logo">
+                                <img src="/assets/img/cart.png" class="text-white cursor-pointer" width="60" id="logo">
                             </div>
                             <div id="carrito">
                                     
@@ -42,7 +41,8 @@
                                         <tbody></tbody>
                                     </table>
 
-                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width text-white bg-red-400 hover:bg-red-500 hover:text-white w-full
+                                    transition-color cursor-pointer">Vaciar Carrito</a>
                             </div>
                     </li>
                 </ul>
@@ -87,165 +87,35 @@
 
     </div>
 
-    <div id="lista-cursos" class="container">
-        <h1 id="encabezado" class="encabezado">Catalogo Disponible</h1>
-        <div class="row gap-4">
-            <div class="four columns w-full">
-                <div class="bg-white rounded-lg shadow-lg">
-                    <img src="img/curso1.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Curso de Comida Vegetariana</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
-                        </div>
-                    </div>
-            </div>
-            <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Guitarra para Principiantes</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-
-        </div> <!--.row-->
-        <div class="row">
-            <div class="four columns w-full">
-                <div class="bg-white rounded-lg shadow-lg">
-                    <img src="img/curso4.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Huerto en tu casa</h4>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Decoración con productos de tu hogar</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-            <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso1.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Diseño Web para Principiantes</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-        </div> <!--.row-->
-        <div class="row">
-            <div class="four columns w-full">
-                <div class="bg-white rounded-lg shadow-lg">
-                    <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Comida Mexicana para principiantes</h4>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Estudio Musical en tu casa</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-            <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso4.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Cosecha tus propias frutas y verduras</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-        </div> <!--.row-->
-        <div class="row">
-                <div class="four columns w-full">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Pizza Peperoni y champiñon</h4>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-                </div>
-                <div class="four columns w-full">
-                        <div class="bg-white rounded-lg shadow-lg">
-                            <img src="assets/img/comida/bandeja-paisa.png" class="rounded-t-lg imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>Bandeja Paisa</h4>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                </div>
-                <div class="four columns w-full">
-                        <div class="bg-white rounded-lg shadow-lg">
-                            <img src="assets/img/comida/Doplins.png" class="rounded-t-lg imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>Comida China - doplins</h4>
-                                <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                </div>
-            </div> <!--.row-->
+    <div id="lista-cursos" class="container" name="foodCard">
+        <h1 id="encabezado" class="font-bold text-2xl">Catalogo Disponible</h1>
+        <label for="filter" class="text-md mx-5">Filtrar por tipo</label>
+        <div class="w-1/4 my-2 flex justify-start p-2">
+            <select name="filter" id="filter-food" class="border w-full rounded-lg">
+                <option selected>filtrar</option>
+            </select>
+        </div>
+        <div class="container items-center grid mx-5 md:p-3 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-6" id="columns-items"></div> <!--.row--> 
     </div>  
 
     <footer id="footer" class="tex+t-center footer p-5 mt-10  shadow-md">
         <div class="container">
             <div class="p-2 mt-4 font-bold justify-center items-center">
-                <p class="text-3xl flex gap-1">PoweredBy Tailwind 
-
-                    <svg width="30" height="18" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0ZM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9Z" fill="#38BDF8"></path></svg>
+                <p class="text-3xl flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                      </svg>
+                      FastFood - 2023 
                 </p>
             </div>
         </div>
     </footer>
 
     <!-- scrip librarys -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
-    <script src="js/app.js"></script>
+
+    <!-- script module principal project -->
+    <script src="js/app.js" type="module"></script>
 
 </body>
 </html>
