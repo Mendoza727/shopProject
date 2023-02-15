@@ -24,8 +24,8 @@ header {
         text-align: left;
     }
 }
-.borrar-curso {
-    background-color: red;
+.borrar-comida {
+    background-color: rgb(202, 0, 0);
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
@@ -37,7 +37,7 @@ ul {
     list-style: none;
 }
 #hero {
-    background-image:url(../assets/img/hero.png);
+    background-image:url('https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2FprojectShopWeb%2Fassets%2Fhero.png?alt=media&token=2599a2f5-e434-433d-9648-4c5d0cdad1c3');
     height: 350px;
     background-size: cover;
 }
@@ -98,6 +98,8 @@ ul {
 }
 
 
+  
+
 .barra {
     padding: 20px 0;
     background: #741d51; /* Old browsers */
@@ -124,17 +126,8 @@ ul {
         margin-bottom:0;
     }
 }
-.icono1 {
-    background-image: url(../img/icono1.png);
-}
-.icono2 {
-    background-image: url(../img/icono2.png);
-}
-.icono3 {
-    background-image: url(../img/icono3.png);
-}
 
-#lista-cursos .row {
+#lista-comida .row {
     margin-bottom:20px;
 }
 .agregar-carrito {

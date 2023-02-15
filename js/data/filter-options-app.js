@@ -1,26 +1,34 @@
-const options = [
+export const options = [
     {
-        option1: 'hamburgesa'   
+        option: 1, 
+        type: 'hamburgesa'
     },
     {
-        option2: 'pizza'
+        option: 2,
+        type: 'pizza'
     },
     {
-        option3: 'patatas'
+       option: 3,
+        type: 'patatas'
     },
     {
-        option4: 'pollo'
+       option: 4,
+        type: 'pollo'
     },
     {
-        option5: 'tacos'
+       option: 5,
+        type: 'tacos',
     },
     {
-        option6: 'empanadas'
+       option: 6,
+        type: 'empanada',
     },
     {
-        option7: 'quesadillas'
+       option: 7,
+        type: 'quesadillas',
     },
     {
-        option8: 'all'
+       option: 8,
+        type: 'all',
     }
 ];
