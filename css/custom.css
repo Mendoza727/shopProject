@@ -24,8 +24,8 @@ header {
         text-align: left;
     }
 }
-.borrar-curso {
-    background-color: red;
+.borrar-comida {
+    background-color: rgb(202, 0, 0);
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
@@ -124,17 +124,8 @@ ul {
         margin-bottom:0;
     }
 }
-.icono1 {
-    background-image: url(../img/icono1.png);
-}
-.icono2 {
-    background-image: url(../img/icono2.png);
-}
-.icono3 {
-    background-image: url(../img/icono3.png);
-}
 
-#lista-cursos .row {
+#lista-comida .row {
     margin-bottom:20px;
 }
 .agregar-carrito {

@@ -5,7 +5,7 @@ export const typesFood = [
         id: 1,
         type: 'hamburgesas',
         name: 'Hamburgesa de carne',
-        img: 'assets/img/comida/comida.png',
+        img: '../../assets/img/food.png',
         descripcion: 'comida del suroriente',
         estrellas: 3,
         precio: 80000
@@ -14,7 +14,7 @@ export const typesFood = [
         id: 2,
         type: 'hamburgesas doble carne',
         name: 'comida1',
-        img: 'assets/img/comida/comida.png',
+        img: '../../assets/img/food.png',
         descripcion: 'comida del suroriente',
         estrellas: 4,
         precio: 920000
@@ -23,7 +23,7 @@ export const typesFood = [
         id: 3,
         type: 'hamburgesas',
         name: 'comida1',
-        img: 'assets/img/comida/comida.png',
+        img: '../../assets/img/food.png',
         descripcion: 'comida del suroriente',
         estrellas: 5,
         precio: 20000
@@ -32,7 +32,7 @@ export const typesFood = [
         id: 4,
         type: 'hamburgesas',
         name: 'comida1',
-        img: 'assets/img/comida/comida.png',
+        img: '../../assets/img/food.png',
         descripcion: 'comida del suroriente',
         estrellas: 4,
         precio: 20000
@@ -44,7 +44,7 @@ export const typesFood = [
         id: 5,
         type: 'pizzas',
         name: 'comida1',
-        img: 'assets/img/comida/comida.png',
+        img: '../../assets/img/food.png',
         descripcion: 'comida del suroriente',
         estrellas: 4,
         precio: 20000
@@ -53,7 +53,7 @@ export const typesFood = [
         id: 6,
         type: 'pizzas',
         name: 'comida1',
-        img: 'assets/img/comida/comida.png',
+        img: '../../assets/img/food.png',
         descripcion: 'comida del suroriente',
         estrellas: 4,
         precio: 20000
@@ -62,7 +62,7 @@ export const typesFood = [
         id: 7,
         type: 'pizzas',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -71,7 +71,7 @@ export const typesFood = [
         id: 8,
         type: 'pizzas',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -80,7 +80,7 @@ export const typesFood = [
         id: 9,
         type: 'pizzas',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -92,7 +92,7 @@ export const typesFood = [
         id: 10,
         type: 'patatas',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -101,7 +101,7 @@ export const typesFood = [
         id: 11,
         type: 'patatas',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -113,7 +113,7 @@ export const typesFood = [
         id: 12,
         type: 'pollo',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -122,7 +122,7 @@ export const typesFood = [
         id: 13,
         type: 'pollo',
         name: 'comidaOtroArray',
-        img: null,
+        img: '../../assets/img/food.png',
         descripcion: null,
         estrellas: 2,
         precio: 20000
@@ -134,7 +134,7 @@ export const typesFood = [
             id: 14,
             type: 'tacos',
             name: 'comidaOtroArray',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: null,
             estrellas: 2,
             precio: 20000
@@ -143,7 +143,7 @@ export const typesFood = [
             id: 15,
             type: 'tacos',
             name: 'comidaOtroArray',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: null,
             estrellas: 2,
             precio: 20000
@@ -154,7 +154,7 @@ export const typesFood = [
             id: 16,
             type: 'empanada',
             name: 'empanadas',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: 'empanadas rico',
             estrellas: 5,
             precio: 2000
@@ -163,7 +163,7 @@ export const typesFood = [
             id: 17,
             type: 'empanada',
             name: 'empanadas',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: 'empanadas rico',
             estrellas: 5,
             precio: 2000
@@ -172,7 +172,7 @@ export const typesFood = [
             id: 18,
             type: 'empanada',
             name: 'empanadas',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: 'empanadas rico',
             estrellas: 5,
             precio: 2000
@@ -183,7 +183,7 @@ export const typesFood = [
             id: 19,
             type: 'quesadillas',
             name: 'quesadilla',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: 'empanadas rico',
             estrellas: 5,
             precio: 20000
@@ -192,7 +192,7 @@ export const typesFood = [
             id: 20,
             type: 'quesadillas',
             name: 'quesadilla',
-            img: null,
+            img: '../../assets/img/food.png',
             descripcion: 'empanadas rico',
             estrellas: 5,
             precio: 200000
