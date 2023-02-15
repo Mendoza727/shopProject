@@ -21,7 +21,7 @@ export const options = [
     },
     {
        option: 6,
-        type: 'empanadas',
+        type: 'empanada',
     },
     {
        option: 7,

@@ -1,9 +1,9 @@
 //imports
 import { typesFood } from "./data/filter-app.js";
-import { options } from "./data/filter-options-app.js"
+//import { options } from "./data/filter-options-app.js"
 
 //variables 
-const optionForSelectDom = document.querySelector('#filter-food');
+//const optionForSelectDom = document.querySelector('#filter-food');
 const viewInfoFoodDom = document.querySelector('#columns-items');
 const containerCartShop = document.querySelector('#lista-carrito tbody');
 const deleteProductCart = document.querySelector('#vaciar-carrito');
@@ -20,7 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
 //funciones
 eventListeners();
 function eventListeners(){
+    //añadir producto al carrito
     listFood.addEventListener('click', addFood);
+
+    //eliminar elemento del carrito de compras
+    cartShop.addEventListener('click', deleteCartShop);
+
+
+    //elimina todo el carrito de compras
+    deleteProductCart.addEventListener('click', () => {
+        cartObjectFood = []; // borramos el arreglo existente
+        
+        deleteFoodSelected(); //limpiamos el html del carrito de compras
+    });
 }
 
 function addFood(e){
@@ -32,8 +44,45 @@ function addFood(e){
 }
 
 
+//elimina la comida del carrito de compras
+function deleteCartShop(e){
+      if( e.target.classList.contains('borrar-comida') ){
+        
+        //elimina la comida seleccionada del arreglo
+          const foodDelete = e.target.getAttribute('data-id');
+          const updateQuantity = cartObjectFood.some(food => food.id === foodDelete )
+          if (updateQuantity) {
+              const updateNewQuantity = cartObjectFood.map( food => {
+                if(food.id === foodDelete && food.quantity !== 1) {
+                  food.quantity--;
+                  return food;
+                }else {
+                  return food;
+                }
+              });
+              cartObjectFood = [...updateNewQuantity];
+            if(updateNewQuantity){
+               cartObjectFood.map(food => {
+                  if(food.id === foodDelete && food.quantity === 1){
+                    return cartObjectFood = cartObjectFood.filter( food => food.id !== foodDelete );
+                  }else {
+                    return food;
+                  }
+               });
+            }
+              
+          }
+      }
+
+          cartHtml();
+}
+
+
 //contiene la informacion comida seleccionada 
 function infoFood(food){
+   
+
+    //objeto creado apartir de la comida seleccionada
     const infoFoodSelected = {
         img: food.querySelector('img').src,
         title: food.querySelector('h4').textContent,
@@ -41,8 +90,28 @@ function infoFood(food){
         id: food.querySelector('a').getAttribute('id'),
         quantity: 1
     }
-  //añade elemento al carrido
-  cartObjectFood = [...cartObjectFood, infoFoodSelected];
+
+  //revisa si el objeto ya esta en el carrito 
+    const exists = cartObjectFood.some(food => food.id === infoFoodSelected.id);
+    if(exists){
+      
+      //actualizamos la cantidad
+      const foodQuantity = cartObjectFood.map( food => {
+         if( food.id === infoFoodSelected.id ){
+              food.quantity++;
+              return food; //retorna objeto con cantidad actualizada
+         }else {
+              return food;  //retorna objeto normal
+         }
+      });
+      cartObjectFood = [...foodQuantity];
+    }else {
+       
+      //añadimos al carrito default
+      cartObjectFood = [...cartObjectFood, infoFoodSelected];
+
+    }
+
   cartHtml();
 }
 
@@ -82,7 +151,7 @@ function deleteFoodSelected(){
 
 //metodos
 typesFood.forEach(element => {
-    const {id, name, img, type, descripcion, estrellas, precio} = element;
+    const {id, name, img, precio} = element;
     
     
     const foodContainerView = document.createElement('div');
@@ -115,17 +184,11 @@ typesFood.forEach(element => {
           addCartProduct.classList.add('u-full-width', 'bg-blue-400', 'cursor-pointer', 'rounded-lg', 'p-3', 'mt-4', 'font-bold' ,'hover:text-white', 'agregar-carrito', 'hover:bg-blue-500', 'text-white');
           addCartProduct.textContent = 'Agregar al carrito';
           addCartProduct.id = id;
-  
-
-    const foodDescription = document.createElement('p');
-          foodDescription.textContent = descripcion;
-          foodDescription.classList.add('text-sm', 'font-bold');
           
 
           /* div whith info array */
           divInfoFood.appendChild(imgFood);
           divInfoFood.appendChild(foodName);
-          divInfoFood.appendChild(foodDescription);
           divInfoFood.appendChild(fooodPrice);
           divInfoFood.appendChild(addCartProduct);
 
@@ -138,12 +201,11 @@ typesFood.forEach(element => {
 
 //foreach que recorre las opciones para filtar la comida
 
-options.forEach(op => {
-    const { option, type} = op;
-    const optionContainer = document.createElement('option');
-          optionContainer.classList.add('text-center');
-          optionContainer.value = option;
-          optionContainer.textContent = type
-    optionForSelectDom.appendChild(optionContainer);
-});
+// options.forEach(op => {
+//     const { option, type} = op;
+//     const optionContainer = document.createElement('option');
+//           optionContainer.value = option;
+//           optionContainer.textContent = type
+//     optionForSelectDom.appendChild(optionContainer);
+// });
 

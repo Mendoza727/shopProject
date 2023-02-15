@@ -37,7 +37,7 @@ ul {
     list-style: none;
 }
 #hero {
-    background-image:url(../assets/img/hero.png);
+    background-image:url('https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2FprojectShopWeb%2Fassets%2Fhero.png?alt=media&token=2599a2f5-e434-433d-9648-4c5d0cdad1c3');
     height: 350px;
     background-size: cover;
 }
@@ -97,6 +97,8 @@ ul {
     border:none;
 }
 
+
+  
 
 .barra {
     padding: 20px 0;
